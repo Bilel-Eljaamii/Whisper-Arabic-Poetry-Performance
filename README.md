@@ -16,6 +16,29 @@ Here’s a YouTube video of Amr ibn Kulthum's *Mu'allaqat*:
   Your browser does not support the video tag.
 </video>
 
+## *How to use*
+
+```js
+usage: transcribe.py [-h] --model {tiny,base,small,medium,large,turbo} --audio AUDIO [--language LANGUAGE]
+
+Transcribe audio using OpenAI's Whisper model.
+
+options:
+  -h, --help            show this help message and exit
+  --model {tiny,base,small,medium,large,turbo}
+                        Model size to use for transcription (tiny, base, small, medium, large, turbo).
+  --audio AUDIO         Path to the audio file to transcribe.
+  --language LANGUAGE   Language code for transcription (e.g., 'ar' for Arabic).
+```
+
+```js
+python transcribe.py --model turbo --audio 01_AmroIbnKalthoum.mp3 --language ar
+```
+
+```js
+python whisper_benchmarks.py  
+```
+
 ---
 
 ### **Analysis of Whisper Model Benchmarks for Arabic Transcription**  
