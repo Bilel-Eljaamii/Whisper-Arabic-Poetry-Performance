@@ -10,6 +10,7 @@ Here’s an excerpt from the *Mu'allaqat*:
   Your browser does not support the audio element.
 </audio>
 
+---
 
 Here’s a YouTube video of Amr ibn Kulthum's *Mu'allaqat*:  
 <video controls width="100%">
