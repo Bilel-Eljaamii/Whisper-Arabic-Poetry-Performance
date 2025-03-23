@@ -83,7 +83,10 @@ For critical Arabic transcription tasks (e.g., classical poetry like Amr ibn Kul
 ---
 
 ### **Visualizing the Trade-Offs**  
-![Arabic Transcription Benchmarks](https://via.placeholder.com/800x400.png?text=Speed+vs+Accuracy+for+Arabic+Transcription)  
+![Arabic Transcription Benchmarks](transcription_performance.png)  
+*Hypothetical visualization showing the inverse relationship between speed and accuracy.*
+
+![Arabic Transcription Benchmarks](whisper_benchmarks_dark.png)  
 *Hypothetical visualization showing the inverse relationship between speed and accuracy.*
 
 ---
