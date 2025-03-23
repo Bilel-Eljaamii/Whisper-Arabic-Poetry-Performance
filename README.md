@@ -1,6 +1,19 @@
 # Whisper-Arabic-Poetry-Performance
 Benchmarking OpenAI Whisper models (tiny→turbo) for classical Arabic poetry transcription (Amr ibn Kulthum’s Mu'allaqat). Metrics: speed, accuracy, disk usage. Error analysis on diacritics (tashkeel) &amp; archaic vocabulary. Includes Python scripts, dataset (audio samples), and visualizations. #ArabicNLP #ASR #Whisper
 
+## Listen to Amr ibn Kulthum's Mu'allaqat  
+
+Here’s an excerpt from the *Mu'allaqat*:  
+
+<audio controls>
+  <source src="01_AmroIbnKalthoum.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+Here’s a YouTube video of Amr ibn Kulthum's *Mu'allaqat*:  
+
+[![Mu'allaqat Recitation](https://img.youtube.com/vi/QnEf85ksNlg/0.jpg)](https://www.youtube.com/watch?v=QnEf85ksNlg)
+
 ### **Analysis of Whisper Model Benchmarks for Arabic Transcription**  
 
 ### **1. Loading Duration**  
