@@ -10,13 +10,13 @@ Here’s an excerpt from the *Mu'allaqat*:
   Your browser does not support the audio element.
 </audio>
 
----
-
 Here’s a YouTube video of Amr ibn Kulthum's *Mu'allaqat*:  
 <video controls width="100%">
   <source src="[https://raw.githubusercontent.com/username/repo/main/video.mp4](https://www.youtube.com/watch?v=QnEf85ksNlg)" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+---
 
 ### **Analysis of Whisper Model Benchmarks for Arabic Transcription**  
 
