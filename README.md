@@ -12,7 +12,7 @@ Here’s an excerpt from the *Mu'allaqat*:
 
 Here’s a YouTube video of Amr ibn Kulthum's *Mu'allaqat*:  
 <video controls width="100%">
-  <source src="[https://raw.githubusercontent.com/username/repo/main/video.mp4](https://www.youtube.com/watch?v=QnEf85ksNlg)" type="video/mp4">
+  <source src="[https://www.youtube.com/watch?v=QnEf85ksNlg](https://www.youtube.com/watch?v=QnEf85ksNlg)" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -102,7 +102,6 @@ For critical Arabic transcription tasks (e.g., classical poetry like Amr ibn Kul
 ### **Key Takeaways for Arabic Transcription**  
 1. **For Classical Poetry (e.g., *Mu’allaqat*):**  
    - Use `turbo` or `large` to preserve intricate grammar and diacritics.  
-   - Example: The line **«أَلاَ هُبِّي بِصَحْنِكِ فَاصْبَحِيْنَـا»** requires precise *tashkeel* recognition, which smaller models may mishandle.  
 
 2. **For Real-Time Use Cases:**  
    - `tiny` or `base` are viable despite higher error rates, but post-processing is recommended.  
@@ -127,7 +126,7 @@ For critical Arabic transcription tasks (e.g., classical poetry like Amr ibn Kul
 *Hypothetical visualization showing the inverse relationship between speed and accuracy.*
 
 ![Arabic Transcription Benchmarks](whisper_benchmarks_dark.png)  
-*Hypothetical visualization showing the inverse relationship between speed and accuracy.*
+ *Comparison of all metrics across models.*  
 
 ---
 
