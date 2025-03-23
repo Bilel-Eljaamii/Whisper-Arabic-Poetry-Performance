@@ -10,6 +10,7 @@ Here’s an excerpt from the *Mu'allaqat*:
   Your browser does not support the audio element.
 </audio>
 
+
 Here’s a YouTube video of Amr ibn Kulthum's *Mu'allaqat*:  
 <video controls width="100%">
   <source src="[https://www.youtube.com/watch?v=QnEf85ksNlg](https://www.youtube.com/watch?v=QnEf85ksNlg)" type="video/mp4">
@@ -38,6 +39,27 @@ python transcribe.py --model turbo --audio 01_AmroIbnKalthoum.mp3 --language ar
 ```js
 python whisper_benchmarks.py  
 ```
+
+---
+
+### **Trade-Off Summary**  
+| Model    | Speed (Transcription) | Accuracy (Mistakes) | Disk Footprint | Use Case                          |  
+|----------|-----------------------|---------------------|----------------|-----------------------------------|  
+| `tiny`   | ⚡⚡⚡⚡⚡ (5.86s)       | ⚠️ 93 errors         | ⚡ 0.07 GB      | Real-time apps (speed > accuracy) |  
+| `base`   | ⚡⚡⚡⚡ (14.37s)        | ⚠️ 41 errors         | ⚡ 0.14 GB      | Basic transcription               |  
+| `small`  | ⚡⚡⚡ (30.28s)         | ⚠️ 28 errors         | ⚡ 0.46 GB      | Moderate accuracy needs           |  
+| `medium` | ⚡⚡ (103.99s)          | ✅ 10 errors          | ⚡ 1.5 GB       | Balanced use cases                |  
+| `large`  | ⚡ (115.54s)           | ✅ 7 errors           | ⚠️ 2.9 GB       | High accuracy (slow)              |  
+| `turbo`  | ⚡⚡⚡ (64.29s)         | ✅✅ 6 errors          | ✅ 1.6 GB       | **Optimal choice**: Fast + accurate|  
+
+---
+
+### **Visualizing the Trade-Offs**  
+![Arabic Transcription Benchmarks](transcription_performance.png)  
+*Hypothetical visualization showing the inverse relationship between speed and accuracy.*
+
+![Arabic Transcription Benchmarks](whisper_benchmarks_dark.png)  
+ *Comparison of all metrics across models.*  
 
 ---
 
@@ -87,18 +109,6 @@ For critical Arabic transcription tasks (e.g., classical poetry like Amr ibn Kul
 
 ---
 
-### **Trade-Off Summary**  
-| Model    | Speed (Transcription) | Accuracy (Mistakes) | Disk Footprint | Use Case                          |  
-|----------|-----------------------|---------------------|----------------|-----------------------------------|  
-| `tiny`   | ⚡⚡⚡⚡⚡ (5.86s)       | ⚠️ 93 errors         | ⚡ 0.07 GB      | Real-time apps (speed > accuracy) |  
-| `base`   | ⚡⚡⚡⚡ (14.37s)        | ⚠️ 41 errors         | ⚡ 0.14 GB      | Basic transcription               |  
-| `small`  | ⚡⚡⚡ (30.28s)         | ⚠️ 28 errors         | ⚡ 0.46 GB      | Moderate accuracy needs           |  
-| `medium` | ⚡⚡ (103.99s)          | ✅ 10 errors          | ⚡ 1.5 GB       | Balanced use cases                |  
-| `large`  | ⚡ (115.54s)           | ✅ 7 errors           | ⚠️ 2.9 GB       | High accuracy (slow)              |  
-| `turbo`  | ⚡⚡⚡ (64.29s)         | ✅✅ 6 errors          | ✅ 1.6 GB       | **Optimal choice**: Fast + accurate|  
-
----
-
 ### **Key Takeaways for Arabic Transcription**  
 1. **For Classical Poetry (e.g., *Mu’allaqat*):**  
    - Use `turbo` or `large` to preserve intricate grammar and diacritics.  
@@ -118,15 +128,6 @@ For critical Arabic transcription tasks (e.g., classical poetry like Amr ibn Kul
 - **Academic/Literary Use**: `turbo` (6 errors, 64s transcription).  
 - **Real-Time Apps**: `tiny` + post-processing (e.g., rule-based error correction for Arabic diacritics).  
 - **Balanced Workloads**: `medium` (10 errors, 104s).  
-
----
-
-### **Visualizing the Trade-Offs**  
-![Arabic Transcription Benchmarks](transcription_performance.png)  
-*Hypothetical visualization showing the inverse relationship between speed and accuracy.*
-
-![Arabic Transcription Benchmarks](whisper_benchmarks_dark.png)  
- *Comparison of all metrics across models.*  
 
 ---
 
